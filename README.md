@@ -1,37 +1,37 @@
 # SCULPT OG
 
-SCULPT OG 是面向 **原版 Polyend Tracker** 的非官方四轨采样工作站。它适合用循环素材制作 ambient、techno ambient 和演出纹理，从导入 WAV、确认原始 BPM、同步或拉伸开始，再调整颗粒、共振、染色与空间效果。
+SCULPT OG is an unofficial four-track sampling workstation for the **original Polyend Tracker**. Build ambient layers, techno textures, and live variations by loading WAV loops, setting their source tempo, and shaping them with granular processing, resonators, coloration, and shared delay and reverb.
 
-本页展示 **SC0019 / 0.19**。[中文完整操作手册](manual-zh.md) 包含安装与回退、按键表、WAV 格式、调制和 Macro 映射、工程保存、CPU 说明，以及两套制作示例。
+This repository documents **SC0019 / 0.19**. The [English user manual](manual.md) covers installation and rollback, panel shortcuts, WAV formats, modulation, macros, project management, CPU load, and two example patches.
 
-![MATERIAL 页面，显示四轨、采样波形、播放模式和底部八个参数](01-material.png)
+![MATERIAL showing track cards, the waveform, playback mode, and eight parameter controls](01-material.png)
 
-## 工作流
+## Workflow
 
-1. **Note** 选轨，按 **Sample Loader** 浏览 WAV，**Insert** 导入。
-2. 在 **MATERIAL** 确认 SRC BPM 与播放模式。用 RATE 改倍率，短按 Shift 访问裁剪与量化。
-3. 按 **Play**，用 **FX1／FX2** 在 MATERIAL、GRAIN、FILTER、RING、COLOR、SPACE 间切换。
-4. 用 **Sample Editor** 设置 LFO 或可固定 Seed 的随机序列，用 **Performance／Master** 控制四轨音量和八个宏。
+1. Press **Note** to select a track, **Sample Loader** to browse WAVs, and **Insert** to import.
+2. Check **SRC BPM** and **MODE** in MATERIAL. Use **RATE** to change speed. Tap **Shift** for loop trimming and launch quantization.
+3. Press **Play**. Use **FX1 / FX2** to move through MATERIAL, GRAIN, FILTER, RING, COLOR, and SPACE.
+4. Open **Sample Editor** to set up an LFO or a random sequence with a fixed seed. Open **Performance** or **Master** for four track levels and eight macros.
 
-每轨可加载约 11.89 秒的立体声 WAV。Delay 和 Reverb 是两条共享总线，各轨独立控制发送量。SC0019 的四轨 CPU 峰值随工程而变。
+Each track can load up to about 11.89 seconds of stereo WAV audio. Delay and reverb run on two shared buses with independent sends on each track. Four-track CPU load depends on the project and the effects in use.
 
-## 界面截图
+## Screenshots
 
-以下截图由 SC0019 的 Mac 模拟器生成，使用合成测试 WAV。
+Captured in the SC0019 desktop simulator with synthetic test WAVs.
 
 | RING | SPACE |
 |---|---|
-| ![METAL 的三条反馈线及其参数](05-metal.png) | ![SPACE 页显示 Delay Send 和 Reverb Send](06-space.png) |
+| ![The METAL resonator and its three feedback lines](05-metal.png) | ![Delay and reverb sends on the SPACE page](06-space.png) |
 
-| 调制 | 演出 |
+| Modulation | Performance |
 |---|---|
-| ![S&H LFO 四周期预览与已映射的轨道参数](04-lfo-targets.png) | ![Perform 四轨音量、宏目标及 TEMP 状态](03-perform-temp.png) |
+| ![A four-cycle sample-and-hold preview and its track target](04-lfo-targets.png) | ![PERFORM with track levels, macro targets, and a temporary adjustment](03-perform-temp.png) |
 
-## 致谢
+## Credits
 
-- **BULUT / polyend-tracker-lab** 是直接代码基础，SCULPT 复用了 LABKIT 和采样工作站框架。 [BULUT 上游项目](https://github.com/semierendonmez-commits/polyend-tracker-lab)
-- **OpenTracker / sandlbn 及贡献者** 提供了 Tracker OG 的硬件与固件底层。 [OpenTracker](https://github.com/sandlbn/polyend-tracker-re)
-- **Retrack / math0ne** 提供了四轨 Looper 和 SD 流式架构参考。 [Retrack](https://github.com/math0ne/retrack-tracker)
-- **Torso Electronics S-4** 提供采样优先、逐段塑形、慢调制和宏控制的工作流灵感。 [S-4 官方指南](https://docs.torsoelectronics.com/s4/introduction/)
+- **BULUT / polyend-tracker-lab** is the direct code base. SCULPT reuses LABKIT and its sampling workstation framework. [BULUT upstream](https://github.com/semierendonmez-commits/polyend-tracker-lab)
+- **OpenTracker / sandlbn and contributors** provide the hardware and firmware foundation for the original Tracker. [OpenTracker](https://github.com/sandlbn/polyend-tracker-re)
+- **Retrack / math0ne** served as an architectural reference for a four-track looper and SD streaming. [Retrack](https://github.com/math0ne/retrack-tracker)
+- **Torso Electronics S-4** inspired the sample-first workflow, sound-shaping stages, slow modulation, and performance macros. [Official S-4 user guide](https://docs.torsoelectronics.com/s4/introduction/)
 
-上游 DSP、贡献者和许可证说明详见[手册的致谢与来源](manual-zh.md#致谢与来源)。SCULPT OG 是独立社区项目，兼容设备为原版 Tracker OG。
+See the manual's [credits and sources](manual.md#credits-and-sources) for more on the upstream DSP, contributors, and licenses. SCULPT OG is an independent community project for the original Tracker.
