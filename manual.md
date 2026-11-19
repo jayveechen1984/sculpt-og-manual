@@ -4,6 +4,8 @@ SCULPT OG is an unofficial four-track sampling workstation for the **original Po
 
 ## Install and return to stock
 
+[Download firmware bundle (ZIP)](https://github.com/jayveechen1984/sculpt-og-manual/releases/download/v0.19.0/SCULPT-OG-SC0019.zip) · [Download the .ptf](https://github.com/jayveechen1984/sculpt-og-manual/releases/download/v0.19.0/PolyendTrackerSC0019.ptf) · [Release notes](https://github.com/jayveechen1984/sculpt-og-manual/releases/tag/v0.19.0)
+
 1. Confirm that your device is the **original Tracker OG**. Tracker+ and Tracker Mini require firmware built for their own hardware.
 2. Back up the SD card. Copy **PolyendTrackerSC0019.ptf** to the card's `/Firmware/` directory with its original filename. Keep a stock OG firmware image on the card as well.
 3. On the Tracker, open **Config → Firmware Update** and select SC0019. Keep the Tracker powered until it restarts.
