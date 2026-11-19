@@ -6,6 +6,12 @@ This repository documents **SC0019 / 0.19**. The [English user manual](manual.md
 
 ![MATERIAL showing track cards, the waveform, playback mode, and eight parameter controls](01-material.png)
 
+## Download firmware
+
+[Download firmware bundle (ZIP)](https://github.com/jayveechen1984/sculpt-og-manual/releases/download/v0.19.0/SCULPT-OG-SC0019.zip) · [Download the .ptf](https://github.com/jayveechen1984/sculpt-og-manual/releases/download/v0.19.0/PolyendTrackerSC0019.ptf) · [Release notes](https://github.com/jayveechen1984/sculpt-og-manual/releases/tag/v0.19.0)
+
+The ZIP includes the firmware, installation notes, license notices, and SHA-256 checksum. Install on the **original Tracker OG** using the steps in the manual.
+
 ## Workflow
 
 1. Press **Note** to select a track, **Sample Loader** to browse WAVs, and **Insert** to import.
